@@ -22,7 +22,6 @@ h1 {
     margin: 0;
 }
 
-/* Contact Info Styles */
 .contact-info {
     text-align: center;
     margin-top: 20px;
@@ -39,6 +38,7 @@ h1 {
     height: 32px;
     cursor: pointer;
 }
+
 .section {
     background-color: #fff;
     padding: 20px;
@@ -47,23 +47,30 @@ h1 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 80%;
-    color: #333;
+    color: #333; 
 }
 
 h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #8db600;
+    color: #8db600; 
 }
-
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; 
+    padding-left: 0; 
 }
 
-ul li {
-    margin-bottom: 5px;
+li {
+    margin: 5px 0; 
 }
+li::before {
+    content: "\2022";
+    color: #8db600; 
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em;
+}
+
 
 p {
     margin: 0;
